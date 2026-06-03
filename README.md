@@ -4,7 +4,7 @@
 
 This project applies a machine learning approach using a PyTorch-based model to predict optimal CUDA kernel launch configurations (such as block and grid sizes) based on input workload characteristics like matrix size. The objective is to automate performance tuning for CUDA applications by dynamically selecting the most efficient configuration using a trained model.
 
-Developed as part of the ECE 759 course at the University of Wisconsin–Madison, this work reflects my contributions to the ML pipeline, benchmarking, diagnostics, and integration of prediction with actual kernel launch.
+Developed as part of the ECE 759 course at the University of Wisconsin-Madison, this work reflects my contributions to the ML pipeline, benchmarking, diagnostics, and integration of prediction with actual kernel launch.
 
 ---
 
@@ -90,4 +90,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Harshith Kantamneni**  
 MS in Electrical & Computer Engineering  
-University of Wisconsin–Madison
+University of Wisconsin-Madison
