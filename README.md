@@ -22,7 +22,7 @@ Developed as part of the ECE 759 course at the University of Wisconsin–Madison
 A PyTorch **MLP runtime surrogate** (12 workload/launch features) predicts CUDA kernel execution time, and config selection takes `argmin` over the block/grid search space, replacing exhaustive autotuning with a learned selector.
 
 - **Predictor quality:** **R2 = 0.96**, MAE **0.018 ms** on a held-out 20% test split (R2 about 0.98 on the full set).
-- **Selection quality:** the predicted-best block/grid config runs **within ~3% of the exhaustively-measured optimum** (median across workloads); **6 of 7** workloads land within 10% of optimal.
+- **Selection quality:** the predicted-best block/grid config runs **within ~5% of the exhaustively-measured optimum** (median across workloads). Most workloads land within 10% of optimal, with two smaller-matrix shapes (M=64, M=128) the main outliers.
 - **Dataset:** 7 GEMM workloads (M from 1 to 256, K=784, N=256), each exhaustively benchmarked over the full **32x32 block grid** (**7,168** measured configurations), in `data/inputs/training_data.csv`.
 
 Honest scope: a small, fixed-shape dataset from a course project, a strong fit on this regime rather than a general autotuning claim.
